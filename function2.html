@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture materials</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="d">
+      <button id="b">click me!</button>
+      <span>texTtexTtexTtexT</span>
+    </div>
+    <script>
+      document.getElementById('b').addEventListener('mouseover', function(e){
+        e.currentTarget.style.color = 'green';
+      });
+      document.getElementById('b').addEventListener('mouseout', function(e){
+        e.currentTarget.style.color = 'black';
+      });
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture materials</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="d">
+      <!-- <button id="b" onmouseover="on(event)" onmouseout="off(event)">click me!</button> -->
+      <button id="b">click me!</button>
+      <span>texTtexTtexTtexT</span>
+    </div>
+    <script>
+      function on(e) { e.currentTarget.style.color = 'green'; }
+      function off(e) { e.currentTarget.style.color = 'black'; }
+
+      document.getElementById('b').onmouseover - on;
+      document.getElementById('b').onmouseout = off;
+
+      // document.getElementById('b').addEventListener('mouseover', function(e){
+      //   e.currentTarget.style.color = 'green';
+      // });
+      // document.getElementById('b').addEventListener('mouseout', function(e){
+      //   e.currentTarget.style.color = 'black';
+      // });
+    </script>
+  </body>
+</html>
+
+

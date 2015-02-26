@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form submit</title>
+  </head>
+  <body>
+    <form id="myForm" action="script.php" onsubmit="return formSubmit()">
+      <input id="inputText" name="asd" type="text">
+      <input id="submitBtn" type="submit">
+    </form>
+    <script>
+      function formSubmit(){
+        console.log('You typed: '+ document.getElementById('inputText').value);
+        return false;
+      }
+    </script>
+  </body>
+</html>

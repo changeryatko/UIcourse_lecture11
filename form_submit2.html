@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form submit 2</title>
+  </head>
+  <body>
+    <form id="myForm" action="script.php">
+      <input id="inputText" name="asd" type="text">
+      <input id="submitBtn" type="submit">
+    </form>
+    <script>
+      // document.getElementById('myForm').addEventListener('submit', function(e){
+      document.getElementsByTagName('form')[0].addEventListener('submit', function(e){
+        e.preventDefault();
+        console.log('You typed: '+ document.getElementById('inputText').value);
+      });
+    </script>
+  </body>
+</html>
