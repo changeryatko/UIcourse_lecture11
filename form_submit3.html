@@ -10,7 +10,7 @@
     </form>
     <script>
       document.getElementById('submitBtn').addEventListener('click', function(e){
-        e.preventDefault();
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
         console.log('You typed: '+ document.getElementById('inputText').value);
       });
     </script>
